@@ -220,22 +220,22 @@ Rules:
           - !Equals
               - !Ref CodeConnection
               - ""
-        AsertDescription: "The ARN of a Code Connection is required for a deployment using GitHub as its source"
+        AssertDescription: "The ARN of a Code Connection is required for a deployment using GitHub as its source"
       - Assert: !Not
           - !Equals
               - !Ref GitHubOwnerName
               - ""
-        AsertDescription: "The Owner (User or Organization) for the GitHub repoitory is required for a deployment using GitHub as its source"
+        AssertDescription: "The Owner (User or Organization) for the GitHub repoitory is required for a deployment using GitHub as its source"
       - Assert: !Not
           - !Equals
               - !Ref GitHubRepositoryName
               - ""
-        AsertDescription: "The repository name for the GitHub repository is required for a deployment using GitHub as its source"
+        AssertDescription: "The repository name for the GitHub repository is required for a deployment using GitHub as its source"
       - Assert: !Not
           - !Equals
               - !Ref GitHubBranchName
               - ""
-        AsertDescription: "The branch name for the GitHub repository is required for a deployment using GitHub as its source"
+        AssertDescription: "The branch name for the GitHub repository is required for a deployment using GitHub as its source"
 
 Resources:
 
