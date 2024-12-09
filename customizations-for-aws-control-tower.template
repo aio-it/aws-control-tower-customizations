@@ -519,7 +519,7 @@ Resources:
               - !If
                 - IsGitHubPipelineSource
                 - Effect: "Allow"
-                  Action: 
+                  Action:
                     - 'codestar-connections:UseConnection'
                     - 'codestar-connections:GetConnection'
                     - 'codestar-connections:ListConnections'
