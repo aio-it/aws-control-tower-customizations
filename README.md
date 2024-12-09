@@ -8,7 +8,7 @@ The solution can be deployed using one of three sources, S3, CodeCommit and GitH
 
 ## Deploying with S3 as the Source
 
-### Running unit tests for customization 
+### Running unit tests for customization
 * Clone the repository, then make the desired code changes 
 * Next, run unit tests to make sure added customization passes the tests 
 
@@ -73,8 +73,8 @@ chmod +x ./deployment/build-s3-dist.sh
 
 ### Prepare a GitHub Repository
 Create a repository within your GitHub account, the default name used in the template `custom-control-tower-configuration`.
-**Consider making the target repository private**. 
-You'll define you customizations in a yaml file called `manifest.yaml` in the root of this repo. 
+**Consider making the target repository private**.
+You'll define you customizations in a yaml file called `manifest.yaml` in the root of this repo.
 
 The [CfCT customization guide](https://docs.aws.amazon.com/controltower/latest/userguide/cfct-customizations-dev-guide.html) provides detailed guidance on creating a `manifest.yaml` to configure your customizations.
 
@@ -95,18 +95,18 @@ The [CfCT customization guide](https://docs.aws.amazon.com/controltower/latest/u
 ### Deploying the CloudFormation Stack
 * Download the `custom-control-tower-initiation.template` from the root of this repository.
 * Create a new AWS CloudFormation stack, using the `custom-control-tower-initiation.template` above.
- * Under **AWS CodePipeline Source** 
+ * Under **AWS CodePipeline Source**
    * Select `GitHub (via Code Connection)`
  * Under **GitHub Setup (Applicable if 'GitHub (via Code Connection)' was selected as the CodePipeline Source)**
    * **ARN of the Code Connection** provide the `Code Connection ARN`
    * **GitHub User or Organization** type the GitHub user/organization under which you created the repository
    * **GitHub Repository Name** the repository name (defaults to `custom-control-tower-configuration`)
    * **GitHub Branch Name** the branch name (defaults to `main`)
- 
+
 ## Collection of operational metrics
 
 This solution collects anonymous operational metrics to help AWS improve the quality and features of the solution. For more information, including how to disable this capability, please see the [documentation here](https://docs.aws.amazon.com/controltower/latest/userguide/cfct-metrics.html).
 
 ## License
 
-See license [here](https://github.com/aws-solutions/aws-control-tower-customizations/blob/main/LICENSE.txt) 
+See license [here](https://github.com/aws-solutions/aws-control-tower-customizations/blob/main/LICENSE.txt)
