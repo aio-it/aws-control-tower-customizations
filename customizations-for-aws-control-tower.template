@@ -3110,6 +3110,7 @@ Resources:
     Type: AWS::S3::Bucket
     Condition: IsS3PipelineSource
     DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
     Properties:
       VersioningConfiguration:
         Status: Enabled
